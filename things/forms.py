@@ -1,5 +1,7 @@
 from django import forms
 from .models import Thing
+from django.core.validators import MinValueValidator, MaxValueValidator, ValidationError
+
 
 class ThingForm(forms.ModelForm):
     class Meta:
